@@ -26,28 +26,21 @@
 	<br>
 	<form th:action="@{/mostrarEstudiante}" method="POST">
 		<label>Buscar por codigo de Estudiante</label><input type="number" name="Codigo"><br>
-		<input type="submit" value="Buscar">
-		<input type="submit" value="Buscar">
+		<button type="submit" name="action" value="buscar">Buscar</button>
+		<button type="submit" name="action" value="borrar">Borrar</button>
+		<button type="submit" name="action" value="editar">Editar</button>
 	</form>
 		<br>
 	<form th:action="@{/insertarEstudiante}" method="POST">
 		<input type="submit" value="Insertar nuevo estudiante">
 	</form>
 		<br>
-	<form th:action="@{/borrarEstudiante}" method="POST">
-	<label>Borrar por codigo de Estudiante</label><input type="number" name="codigo"><br>
-		<input type="submit" value="Borrar">
-	</form>
-	
 	<form th:action="@{/filtrar}" method="POST">
 		<label>Ingrese cadena por la cual filtrar</label><input type="text" name="nombre"><br>
 			<input type="submit" value="Filtrar">
 	</form>
-	
-	<form th:action="@{/editar}" method="POST">
-		<label>Ingrese id por la cual editar</label><input type="text" name="codigo"><br>
-			<input type="submit" value="Editar">
+		<form th:action="@{/estudiante}">
+		<input type="submit" value="Home">
 	</form>
-
 </body>
 </html>

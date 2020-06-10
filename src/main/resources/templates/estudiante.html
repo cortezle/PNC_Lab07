@@ -5,7 +5,6 @@
 <title>Mostrar estudiante por llave primaria</title>
 </head>
 <body>
-	<label>Estudiante con codigo</label><label th:text="${estudiante.codigoEstudiante}"></label>
 	<table>
 		<thead>
 			<th>Nombre</th>
@@ -20,5 +19,8 @@
 			<th th:text="${estudiante.estadoDelegate}"/>
 		</fr>
 	</table>
+	<form th:action="@{/estudiante}">
+		<input type="submit" value="Home">
+	</form>
 </body>
 </html>
